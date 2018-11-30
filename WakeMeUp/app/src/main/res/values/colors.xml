@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#673ab7</color>
+    <color name="primary_dark">#512da8</color>
+    <color name="primary_light">#D1C4E9</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="accent">#FFC107</color>
+    <color name="icons">#FFFFFF</color>
+
+    <color name="high_priority">#f92a38</color>
+    <color name="critical_priority">#e8a4f5f1</color>
+    <color name="medium_priority">#e75aef30</color>
+    <color name="low_priority">#e6f1ee37</color>
+
+</resources>

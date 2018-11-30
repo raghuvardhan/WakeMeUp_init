@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.raghu.android.wakemeup">
+
+    <application
+        android:name=".WakeMeUp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/WakeMeUp">
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-9326529278822780~1309642359"/>
+
+        <receiver android:name=".Receivers.AlarmReceiver" />
+        <receiver android:name=".Receivers.SnoozeReceiver" />
+        <receiver android:name=".Receivers.CloseReceiver" />
+
+        <activity
+            android:name=".Activities.TaskActivity"
+            android:parentActivityName=".TabsActivity"
+            android:theme="@style/WakeMeUp">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.raghu.android.wakemeup.TabsActivity" />
+        </activity>
+
+        <activity
+            android:name=".SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:parentActivityName=".TabsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.raghu.android.wakemeup.TabsActivity" />
+        </activity>
+
+        <activity android:name=".Activities.ProgressActivity" />
+
+        <activity android:name=".TabsActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Activities.TimeTableActivity"
+            android:theme="@style/WakeMeUp"
+            android:parentActivityName=".TabsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.raghu.android.wakemeup.TabsActivity" />
+        </activity>
+
+        <activity android:name=".HelpActivity"
+            android:theme="@style/WakeMeUp"
+            android:parentActivityName=".TabsActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.raghu.android.wakemeup.TabsActivity" />
+        </activity>
+
+    </application>
+
+</manifest>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HelpActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/help_toolbar"
+        style="@style/toolbar"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:subtitleTextColor="@color/icons"
+        app:titleTextColor="@color/icons" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="?attr/actionBarSize">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_todo_help_question"
+        android:text="@string/create_todo_help_question"
+        android:textStyle="bold"
+        style="@style/TextStyle"/>
+
+        <TextView
+            android:id="@+id/create_todo_help_answer"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/create_todo_help_answer"
+            android:visibility="gone" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_timetable_help_question"
+        android:text="@string/create_timetable_help_question"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_top"
+        style="@style/TextStyle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_timetable_help_answer"
+        android:text="@string/create_timetable_help_answer"
+        android:visibility="gone"
+        style="@style/TextStyle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_progress_help_question"
+        android:text="@string/create_progress_help_question"
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_top"
+        style="@style/TextStyle"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/create_progress_help_answer"
+        android:text="@string/create_progress_help_answer"
+        android:visibility="gone"
+        style="@style/TextStyle"/>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

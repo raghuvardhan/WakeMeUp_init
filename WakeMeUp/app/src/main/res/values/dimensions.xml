@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_top">20sp</dimen>
+    <dimen name="margin_left">25dp</dimen>
+    <dimen name="icon_width">32sp</dimen>
+    <dimen name="icon_height">32sp</dimen>
+</resources>
